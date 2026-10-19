@@ -1,127 +1,25 @@
-/* Reset cơ bản */
+/* --- Reset cơ bản --- */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+/* --- Căn giữa với Flexbox (3 dòng cốt lõi) --- */
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* Căn giữa theo trục ngang */
+    align-items: center;     /* Căn giữa theo trục dọc */
+    background-color: #f0f2f5;
     font-family: Arial, sans-serif;
 }
 
-body {
-    background-color: #f4f6f8;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* 1. Header */
-.header {
-    background: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.header h1 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-}
-
-.header p {
-    font-size: 1.1rem;
-    color: #cbd5e1;
-}
-
-/* 2. Navigation Menu */
-.navbar {
-    background: #34495e;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.nav-list {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 12px 0;
-}
-
-.nav-list li {
-    margin: 0 20px;
-}
-
-.nav-list li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.nav-list li a:hover {
-    color: #1abc9c;
-}
-
-/* 3. Content Section */
-.content-section {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.content-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: white;
+/* --- Định dạng thẻ Card --- */
+.center-card {
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    gap: 30px;
-}
-
-.text-content {
-    flex: 1;
-}
-
-.text-content h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #2c3e50;
-}
-
-.image-content {
-    flex: 1;
-}
-
-.image-content img {
-    width: 100%;
-    border-radius: 6px;
-    object-fit: cover;
-}
-
-/* 4. Footer */
-.footer {
-    background: #1a252f;
-    color: white;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     text-align: center;
-    padding: 20px;
-    margin-top: 60px;
-    font-size: 0.9rem;
-}
-
-/* Responsive cho thiết bị nhỏ */
-@media (max-width: 768px) {
-    .content-box {
-        flex-direction: column;
-        text-align: center;
-    }
-    .nav-list {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    .nav-list li {
-        margin: 0;
-    }
 }
