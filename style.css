@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 40px;
+}
+
+.wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333333;
+    margin-top: 0;
+}
+
+.description {
+    color: #666666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Định nghĩa Flex Container */
+.container {
+    display: flex;
+    
+    /* THAY ĐỔI CÁC GIÁ TRỊ TẠI ĐÂY ĐỂ THỰC HÀNH:
+       - nowrap (mặc định)
+       - wrap
+       - wrap-reverse
+       - initial
+    */
+    flex-wrap: wrap; 
+
+    width: 600px;
+    height: 300px;
+    gap: 10px;
+    border: 3px solid #333333;
+    background-color: #e9ecef;
+    padding: 10px;
+}
+
+/* Định nghĩa các Flex Items */
+.item {
+    width: 180px;
+    height: 80px;
+    padding: 20px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
